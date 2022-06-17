@@ -1,0 +1,11 @@
+@mixin bp1 {
+  @media (max-width: 834px) {
+    @content;
+  }
+}
+
+@mixin bp2 {
+  @media (max-width: 500px) {
+    @content;
+  }
+}
