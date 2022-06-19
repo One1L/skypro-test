@@ -19,5 +19,11 @@
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 32px;
     grid-row-gap: 48px;
+    @include bp1 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include bp2 {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }
