@@ -40,7 +40,7 @@ const Catalog = () => {
   const [products, setProducts] = useState(PRODUCTS);
   const [sortBy, setSortBy] = useState('price-asc');
   useEffect(() => {
-    setProducts(products.concat().sort(
+    setProducts(PRODUCTS.concat().sort(
       ({price: a}, {price: b}) => sortBy === 'price-asc' ? a - b : b - a
     ));
   }, [sortBy]);
