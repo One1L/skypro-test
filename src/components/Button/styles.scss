@@ -1,0 +1,26 @@
+@import "../../res/scss/bps.scss";
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 18px;
+  box-sizing: border-box;
+  height: 37px;
+  border-radius: 50px;
+  font-size: 14px;
+  line-height: 17px;
+  cursor: pointer;
+  @include bp3 {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 0 10px;
+  }
+  &_theme_light {
+    border: 1px solid black;
+  }
+  &_theme_dark {
+    background-color: black;
+    color: white;
+  }
+}

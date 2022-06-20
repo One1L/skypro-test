@@ -38,6 +38,9 @@
 
   &__products {
     margin-bottom: 50px;
+    @include bp2 {
+      margin-bottom: 32px;
+    }
   }
 
   &__product-title {
@@ -52,6 +55,18 @@
     flex-basis: 71px;
     @include bp3 {
       display: none; 
+    }
+  }
+
+  &__clear-cart {
+    margin-right: 7px;
+  }
+
+  &__button {
+    width: 200px;
+
+    @include bp3 {
+      width: calc((100% - 7px) / 2);
     }
   }
 }
