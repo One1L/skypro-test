@@ -14,26 +14,32 @@ const PRODUCTS = [
   {
     id: 0, imgSrc: product0Image, title: 'Кровать TATRAN',
     desc: 'Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.', price: 120000,
+    minCount: 2, maxCount: 5,
   },
   {
     id: 1, imgSrc: product1Image, title: 'Кресло VILORA',
     desc: 'Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань.', price: 21000,
+    minCount: 3, maxCount: 7,
   },
   {
     id: 2, imgSrc: product2Image, title: 'Стол MENU',
     desc: 'Европейский дуб - отличается особой прочностью и стабильностью.', price: 34000,
+    minCount: 4, maxCount: 5,
   },
   {
     id: 3, imgSrc: product3Image, title: 'Диван ASKESTA',
     desc: 'Благодаря защелкивающемуся механизму диван легко раскладывается в комфортную кровать', price: 68000,
+    minCount: 2, maxCount: 7,
   },
   {
     id: 4, imgSrc: product4Image, title: 'Кресло LUNAR',
     desc: 'Прекрасно переносит солнечные лучи, перепады влажности и любые осадки', price: 40000,
+    minCount: 3, maxCount: 5,
   },
   {
     id: 5, imgSrc: product5Image, title: 'Шкаф Nastan',
     desc: 'Мебель может быть оснащена разнообразными системами подсветки.', price: 80000,
+    minCount: 4, maxCount: 7,
   },
 ];
 const Catalog = () => {

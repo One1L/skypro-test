@@ -6,13 +6,15 @@ const cartSlice = createSlice({
   reducers: {
     addProduct: (state, {payload: {product}}) => {
       if (state.products.some(({id}) => id === product.id)) {
-        state.products.find(({id}) => id === product.id).count++;
-      } else {
-        state.products.push({...product, count: 1});
+        return;
       }
+      state.products.push(product);
+    },
+    removeProduct: (state, {payload: {productId}}) => {
+      state.products = state.products.filter(({id}) => id !== productId);
     },
   },
 });
 
 export default cartSlice.reducer;
-export const {addProduct} = cartSlice.actions;
+export const {addProduct, removeProduct} = cartSlice.actions;

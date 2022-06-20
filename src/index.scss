@@ -4,10 +4,10 @@
 body {
   margin: 0 120px;
   font-family: Montserrat;
-  @include bp1 {
+  @include bp2 {
     margin: 0 24px;
   }
-  @include bp2 {
+  @include bp3 {
     margin: 0;
   }
 }

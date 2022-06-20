@@ -1,0 +1,57 @@
+@import "../res/scss/bps.scss";
+
+.cart-page {
+  &__content {
+    display: flex;
+    gap: 33px;
+    justify-content: stretch;
+    @include bp1 {
+      display: block;
+    }
+    @include bp3 {
+      padding: 0 16px;
+    }
+  }
+
+  &__left {
+    flex-grow: 1;
+  }
+
+  &__right {
+    flex-shrink: 0;
+    flex-basis: 379px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: stretch;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #CACDD8;
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 20px;
+    @include bp3 {
+      padding-bottom: 0;
+      margin-bottom: 18px;
+    }
+  }
+
+  &__products {
+    margin-bottom: 50px;
+  }
+
+  &__product-title {
+    flex-grow: 1;
+    @include bp3 {
+      display: none; 
+    }
+  }
+
+  &__count {
+    flex-shrink: 0;
+    flex-basis: 71px;
+    @include bp3 {
+      display: none; 
+    }
+  }
+}

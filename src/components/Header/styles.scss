@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 33px;
-  @include bp2 {
+  @include bp3 {
     height: 89px;
     padding: 17.5px 16px;
     box-sizing: border-box;
@@ -20,7 +20,7 @@
     font-weight: 600;
     line-height: 44px;
     color: white;
-    @include bp2 {
+    @include bp3 {
       font-size: 18px;
       line-height: 22px;
     }
@@ -28,7 +28,7 @@
 
   &__menu {
     display: flex;
-    @include bp2 {
+    @include bp3 {
       align-items: center;
     }
   }
@@ -44,14 +44,14 @@
   }
 
   &__menu-item-text {
-    @include bp2 {
+    @include bp3 {
       display: none;
     }
   }
 
   &__menu-item-icon {
     display: none;
-    @include bp2 {
+    @include bp3 {
       display: block; 
     }
   }
