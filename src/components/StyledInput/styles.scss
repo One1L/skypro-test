@@ -1,0 +1,14 @@
+.styled-input {
+  &:before {
+    border-color: #CACDD8;
+  }
+  &__input {
+    color: black;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    padding-bottom: 3px;
+    &::placeholder {
+      opacity: 1;
+    }
+  }
+}

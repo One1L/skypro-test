@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import Header from '../components/Header';
 import ProductInCart from '../components/ProudctInCart';
 import Button from '../components/Button';
+import CheckoutForm from '../components/CheckoutForm';
 import { clearCart } from '../slices/cart';
 import './cart.scss';
 
@@ -27,9 +28,7 @@ const Cart = () => {
         </Button>
         <Button theme="dark" className="cart-page__button">Продолжить покупки</Button>
       </div>
-      <div className="cart-page__right">
-        bar
-      </div>
+      <CheckoutForm className="cart-page__right" />
     </div>
   </div>;
 };

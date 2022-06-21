@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Header from '../components/Header';
-import StyledSelect from '../components/StyledSelect';
+import SortSelect from '../components/SortSelect';
 import Product from '../components/Product';
 import product0Image from '../res/images/product-0.jpeg';
 import product1Image from '../res/images/product-1.jpeg';
@@ -53,7 +53,7 @@ const Catalog = () => {
   return <div className="catalog-page">
     <Header />
     <div className="catalog-page__content">
-      <StyledSelect className="catalog-page__select" value={sortBy} onChange={(event) => setSortBy(event.target.value)} />
+      <SortSelect className="catalog-page__select" value={sortBy} onChange={(event) => setSortBy(event.target.value)} />
       <div className="catalog-page__products">
         {products.map(product => <Product {...product} key={product.id} />)}
       </div>

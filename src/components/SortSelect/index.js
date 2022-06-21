@@ -2,7 +2,7 @@ import { Select, MenuItem } from "@mui/material";
 import { ReactComponent as ArrowIcon } from '../../res/icons/arrow.svg';
 import './styles.scss';
 
-const StyledSelect = (props) => <Select
+const SortSelect = (props) => <Select
   IconComponent={ArrowIcon}
   classes={{select: 'styled-select__select', icon: 'styled-select__icon'}}
   {...props}
@@ -12,4 +12,4 @@ const StyledSelect = (props) => <Select
   <MenuItem value="price-desc">Порядок: сперва дороже</MenuItem>
 </Select>;
 
-export default StyledSelect;
+export default SortSelect;
