@@ -7,7 +7,7 @@ import Catalog from './pages/catalog';
 import Cart from './pages/cart';
 
 const App = () =>
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Routes>
       <Route path="/cart" element={<Cart />} />
       <Route path="/" element={<Catalog />} />
