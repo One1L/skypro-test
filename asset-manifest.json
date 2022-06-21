@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/skypro-test/static/css/main.3967bf7d.css",
-    "main.js": "/skypro-test/static/js/main.61ab71d0.js",
+    "main.js": "/skypro-test/static/js/main.f887de0f.js",
     "static/media/product-4.jpeg": "/skypro-test/static/media/product-4.a132ce14a3ab5ed0306a.jpeg",
     "static/media/product-2.jpeg": "/skypro-test/static/media/product-2.5be8abcc502dc661a1c0.jpeg",
     "static/media/product-5.jpeg": "/skypro-test/static/media/product-5.b1a9faea94f706640661.jpeg",
@@ -17,10 +17,10 @@
     "static/media/arrow-top.svg": "/skypro-test/static/media/arrow-top.610cb77128d9ed089e599a203a050fde.svg",
     "static/media/arrow.svg": "/skypro-test/static/media/arrow.8352ad00543b526e3b28be1d0aa516a2.svg",
     "main.3967bf7d.css.map": "/skypro-test/static/css/main.3967bf7d.css.map",
-    "main.61ab71d0.js.map": "/skypro-test/static/js/main.61ab71d0.js.map"
+    "main.f887de0f.js.map": "/skypro-test/static/js/main.f887de0f.js.map"
   },
   "entrypoints": [
     "static/css/main.3967bf7d.css",
-    "static/js/main.61ab71d0.js"
+    "static/js/main.f887de0f.js"
   ]
 }
