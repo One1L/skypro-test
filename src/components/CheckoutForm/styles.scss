@@ -1,7 +1,7 @@
 .checkout-form {
   background-color: #F7F6F6;
   border-radius: 20px;
-  padding: 42px 27px 27px;
+  padding: 42px 27px 148px;
 
   &__title {
     font-weight: 600;
@@ -22,5 +22,22 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  &__total-price {
+    text-align: center;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 18px;
+  }
+
+  &__price-value {
+    font-weight: 500;
+  }
+
+  &__checkout-button {
+    width: 290px;
+    margin: 0 auto;
+    display: flex;
   }
 }

@@ -4,7 +4,7 @@ import ProductCounter from '../ProductCounter';
 import './styles.scss';
 
 const currencyFormatter = Intl.NumberFormat('RU');
-const ProductInCart = ({id, imgSrc, title, desc, price, minCount, maxCount}) => {
+const ProductInCart = ({id, imgSrc, title, desc, price, minCount, maxCount, onCountChange}) => {
   const dispatch = useDispatch();
   return <div className="product-in-cart">
     <img className="product-in-cart__img" src={imgSrc} alt={title} />
@@ -19,7 +19,7 @@ const ProductInCart = ({id, imgSrc, title, desc, price, minCount, maxCount}) => 
         Удалить
       </span>
     </div>
-    <ProductCounter className="product-in-cart__counter" min={minCount} max={maxCount} />
+    <ProductCounter className="product-in-cart__counter" min={minCount} max={maxCount} onChange={onCountChange} />
   </div>
 };
 

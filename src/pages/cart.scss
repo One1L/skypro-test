@@ -5,6 +5,7 @@
     display: flex;
     gap: 33px;
     justify-content: stretch;
+    align-items: flex-start;
     @include bp1 {
       display: block;
     }
@@ -26,6 +27,12 @@
   &__right {
     flex-shrink: 0;
     flex-basis: 379px;
+    @include bp1 {
+      width: 376px;
+    }
+    @include bp3 {
+      width: auto;
+    }
   }
 
   &__header {
